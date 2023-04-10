@@ -677,7 +677,19 @@ footer{
         font-family: 'PixeloidMono', sans-serif;
         font-size: 30px;
     }
+
+    .grid-item-moneyrain {
+        width: 815px;
+        height: 400px;
+        overflow: hidden;
+    }
     
+    .flex-item-moneyrain iframe {
+        width: 820px;
+        height: 400px;
+        border: none;
+      }
+
     /* Navigation section */
 
     nav {
@@ -706,19 +718,20 @@ footer{
     .icons{
         width: 100% !important; /** con el !important aseguramos que algo sera mas relevante*/
     }
+    .footer_container{
+        display: grid;
+        /** asignar cuantas columnas queremos*/
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto;
+        padding: 50px 0px; /** 50 px arriba y abajo, 0 pixeles en derecha e izquiera*/
+        gap: 8%;
+        color: black;
+        justify-content: auto;
+        text-align: justify;
+    }
 }
 
-.footer_container{
-    display: grid;
-    /** asignar cuantas columnas queremos*/
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto;
-    padding: 50px 0px; /** 50 px arriba y abajo, 0 pixeles en derecha e izquiera*/
-    gap: 8%;
-    color: black;
-    justify-content: auto;
-    text-align: justify;
-}
+
 
 /** aplicando estilos para pantalla pequenyas*/
 @media (max-width: 550px){
@@ -778,12 +791,14 @@ footer{
     .signin-container {
         display: none;
 
-        }
+    }
 
-        .grid-item-moneyrain {
-            width: 375px;
-            height: 400px;
-        }
+    .grid-item-moneyrain {
+        width: 375px;
+        height: 400px;
+    }
+
+        
         
         
         .grid-form-pf table {
