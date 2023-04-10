@@ -679,16 +679,10 @@ footer{
     }
 
     .grid-item-moneyrain {
-        width: 815px;
-        height: 400px;
-        overflow: hidden;
-    }
+      width: 750px;
+      height: 400px;
+  }
     
-    .flex-item-moneyrain iframe {
-        width: 820px;
-        height: 400px;
-        border: none;
-      }
 
     /* Navigation section */
 
