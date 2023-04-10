@@ -1,0 +1,868 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@font-face {
+    font-family: 'PixeloidMono';
+    src: url('../fonts/PixeloidMono.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'BackToTheFuture';
+    src: url('../fonts/BTTF.ttf') format('truetype');
+}
+
+/* Universal selector for page reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+/* Black wallpaper class */
+.black_wallpaper {
+    background-color: black;
+}
+
+/* Main section */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header section */
+header {
+    background-color: #73F23F;
+    height: 200px;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 200px;
+    font-family: 'Zen Dots', cursive;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation section */
+nav {
+    background-color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 30px;
+    
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+/* Magnify effect for navigation links */
+nav ul li.Magnified:hover {
+    transform: scale(1.2,1.2);
+    transition: all .2s;
+}
+
+/* Sign in form in navigation section */
+.signin-container {
+    position: relative;
+}
+
+.signin-container .window {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.signin-container:hover .window {
+    display: block;
+}
+
+/* Styling the form when hovered */
+form {
+    margin: 0 auto;
+    width: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+form input[type="text"],
+form input[type="password"] {
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/** ATRIBUTOS COMPARTIDOS POR TODAS LAS PAGINAS EN EL MAIN TAG*/
+
+.box-center {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    color: white;
+
+}
+
+.grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.grid-item-text {
+    padding: 5%;
+    text-align: justify;
+}
+
+/* Styling for h3 heading within text grid item */
+.grid-item-text h3 {
+    color: #73F23F;
+    font-family: 'PixeloidMono', sans-serif;
+    font-size: 30px;
+}
+
+ 
+/** agregando estilos al contenido principal de HOME page*/
+
+
+/* Styling for moneyrain grid item */
+.grid-item-moneyrain {
+    width: 1000px;
+    height: 400px;
+}
+
+.flex-item-moneyrain iframe {
+    width: 1000px;
+    height: 1000px;
+    border: none;
+  }
+
+
+
+
+
+  
+  /** agregando estilos al contenido principal de REAL ESTATE page DONE DONE DONE*/ 
+
+  
+.grid-card-realestate {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.1);    
+}
+  /* Styling for text grid item within center box in Credit and Loans page */
+  .grid-item-text-creditnloans {
+    background-color: black;
+    height: auto;
+    width: auto;
+    padding: 30px;
+  }
+  
+  /* Styling for h3 heading within text grid item in Credit and Loans page */
+  .grid-item-text-creditnloans h3 {
+    font-family: 'PixeloidMono', sans-serif;
+    color: #73F23F;
+    font-size: 30px;
+  }
+  
+  .video-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    background-color: black;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Hiding video controls */
+  video::-webkit-media-controls {
+    display:none !important;
+  }
+  
+  video::-webkit-media-controls-enclosure {
+    display:none !important;
+  }
+  
+  video::-webkit-media-controls-panel {
+    display:none !important;
+  }
+  
+  video::-webkit-media-controls-play-button {
+    display:none !important;
+  }
+  
+
+
+  /* BUTTON REDIRECTING TO FORM */
+  #fill-form-btn {
+    background-color: black;
+    color: #73F23F;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid #73F23F;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: 'PixeloidMono', sans-serif;  
+  }
+  
+  #fill-form-btn:hover {
+    background-color: #73F23F;
+    color: black;
+    border: 1px solid black;
+    text-shadow: none;
+    box-shadow: 2px 4px 6px rgba(250, 250, 250, 0.2);
+  }
+
+/* Styling for h3 heading within text grid item in PERSONAL FINANCE page */
+
+
+.grid-item-text-pf h3 {
+    font-family: 'PixeloidMono', sans-serif;
+    color: #73F23F;
+    font-size: 30px;
+}
+
+
+/* STYLING THE FORM IN PERSONAL FINANCE PAGE*/
+
+.Spreadsheet_instructions {
+    color: green;
+}
+
+.grid-form-pf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    max-width: 100%;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+  }
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+  }
+
+.form-container {
+    background-color: black;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.grid-form-pf table {
+    border-collapse: collapse;
+    font-family: 'Courier New', monospace;
+    color: green;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .grid-form-pf th, .grid-form-pf td {
+    border: 1px solid green;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .grid-form-pf th {
+    background-color: black;
+  }
+  
+ /* CURRENCY ADDED*/
+
+  td[data-type="currency"]::before {
+    content: "$";
+  }
+
+  .currency {
+    position: relative;
+    left: -10px; /* ajusta el valor según sea necesario */
+    font-weight: bold;
+  }
+  
+
+  .grid-form-pf td input {
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    color: green;
+    background-color: black;
+    border: none;
+    white-space: nowrap;
+  }
+  
+  .grid-form-pf tfoot td {
+    font-weight: bold;
+    background-color: black;
+    color: green;
+    white-space: nowrap;
+  }
+
+
+
+/*blinking animation*/
+
+  @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking {
+    animation: blink 1s infinite;
+}
+
+.blinking:active,
+.blinking:focus {
+  animation-play-state: paused;
+}
+
+
+/** STYLING APPLY NOW PAGE */
+.grid-form-applynow {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: black;
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+
+.KYC_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: 'PixeloidMono', sans-serif;
+  border-collapse: collapse;
+font-family: 'Courier New', monospace;
+font-weight: bolder;
+color: green;
+}
+
+.KYC_form th, .KYC_form td {
+border: 1px solid green;
+padding: 10px;
+text-align: center;
+}
+
+.KYC_form th {
+background-color: black;
+}
+
+.KYC_form td input {
+font-family: 'Courier New', monospace;
+text-align: center;
+color: green;
+background-color: black;
+border: none;
+}
+
+
+.KYC_form label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.KYC_form input,
+.KYC_form select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid green;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.KYC_form input[type="file"] {
+  margin-top: 5px;
+}
+
+.KYC_form input[type="text"], 
+.KYC_form input[type="tel"], 
+.KYC_form input[type="email"], 
+.KYC_form input[type="number"], 
+.KYC_form select {
+border: 2px solid green;
+background-color: black;
+color: white;
+padding: 5px;
+margin: 5px 0;
+width: 100%;
+box-sizing: border-box;
+font-size: 16px;
+font-family: 'Courier New', monospace;
+}
+
+
+.KYC_form input::placeholder {
+color: green;
+font-family: 'Courier New', monospace;
+}
+
+.KYC_form select::placeholder {
+color: green;
+}
+
+
+input[type="submit"] {
+  background-color: black;
+color: #73F23F;
+text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+border: 1px solid #73F23F;
+padding: 12px 24px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+font-weight: bolder;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+font-family: 'Courier New', monospace;
+}
+
+input[type="submit"]:hover {
+  background-color: #73F23F;
+color: black;
+border: 1px solid black;
+text-shadow: none;
+box-shadow: 2px 4px 6px rgba(250, 250, 250, 0.2);
+  
+}
+
+.container {
+  padding: 5%;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#checkbox {
+  margin-right: 10px;
+}
+
+#checkbox-label {
+  font-weight: bold;
+}
+
+#permission-text {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.empty-container {
+  height: 20px;
+}
+
+.grid-image-container-applynow {
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: black;
+}
+
+.image-container-applynow {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.image-container-applynow img {
+object-fit: cover;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+  
+
+/* MAIN BACKGROUND IMAGE APPLY NOW PAGE */
+
+.background_image_applynow {
+
+    background-image: url("../img/wormhole-739872.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+footer{
+    background-color: white;
+    display: flex; /** Indicamos que el contenedor va a ser flexible*/
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    font-size: small;
+}
+
+
+.footer_container{
+    display: grid;
+    /** asignar cuantas columnas queremos*/
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: auto;
+    padding: 50px 0px; /** 50 px arriba y abajo, 0 pixeles en derecha e izquiera*/
+    gap: 8%;
+    color: black;
+    justify-content: auto;
+}
+
+.margin{
+    margin: 5px 0;
+}
+
+.icons{
+    display: flex;
+
+    align-items: center;
+    flex-grow: row nowrap;
+}
+
+.icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    color: #73F23F;
+    margin: 5px;
+}
+
+.footer_container .info .icons {
+    width: 60%;
+}
+
+.footer_container .info .icons a{
+    width: 50px;
+    height: 50px;
+}
+
+/** pseudo clase: hover*/
+
+.footer_container .info .icons a:hover{
+    background: #73F23F;
+    color: black;
+}
+
+/*AJUSTANDO PROPORCIONES */
+
+@media (max-width:1100px){
+
+    header {
+        background-color: #73F23F;
+        height: 100px;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        font-size: large;
+        font-family: 'Zen Dots', cursive;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .box-section{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .grid-container {
+        flex-direction: column;
+      }
+    
+    .grid-item-text {
+        text-align: justify;
+    }
+    .grid-item-text h3 {
+        color: #73F23F;
+        font-family: 'PixeloidMono', sans-serif;
+        font-size: 30px;
+    }
+    
+    /* Navigation section */
+
+    nav {
+    background-color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: smaller;
+    }
+
+
+    nav ul li {
+    display: inline-block;
+    margin: 15px;
+    }
+
+    nav ul li a {
+    color: black;
+    text-decoration: none;
+    }
+
+    .signin-container {
+        display: none;
+    }
+
+    /* Magnify effect for navigation links */
+    .icons{
+        width: 100% !important; /** con el !important aseguramos que algo sera mas relevante*/
+    }
+}
+
+.footer_container{
+    display: grid;
+    /** asignar cuantas columnas queremos*/
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    padding: 50px 0px; /** 50 px arriba y abajo, 0 pixeles en derecha e izquiera*/
+    gap: 8%;
+    color: black;
+    justify-content: auto;
+    text-align: justify;
+}
+
+/** aplicando estilos para pantalla pequenyas*/
+@media (max-width: 550px){
+
+    .box-section{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .grid-container {
+        flex-direction: column;
+      }
+
+    .grid-item-text {
+        justify-content: left; 
+    }
+
+    .grid-item-text h3 {
+        color: #73F23F;
+        font-family: 'PixeloidMono', sans-serif;
+        font-size: 30px;
+        text-align: left;
+    }
+    
+
+    .footer_container{
+        grid-template-columns: 1fr;
+        justify-content: auto;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    /* Navigation section */
+
+    nav {
+        background-color: white;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: smaller;
+        }
+    
+    
+    nav ul li {
+        display: inline-block;
+        margin: 15px;
+
+        }
+    
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+
+        }
+    
+    .signin-container {
+        display: none;
+
+        }
+
+        .grid-item-moneyrain {
+            width: 375px;
+            height: 400px;
+        }
+        
+        
+        .grid-form-pf table {
+            width: 100%;
+            max-width: 100%;
+            font-size: 10px;
+            }
+            .grid-form-pf th, .grid-form-pf td {
+            width: 100%;
+            overflow: hidden;
+            font-size: 10px;
+            }
+            .grid-form-pf td input {
+            width: 100%;
+            overflow: hidden;
+            font-size: 10px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                table-layout: fixed
+              }
+
+            .grid-card-realestate {
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+            }
+            
+            .card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+              
+            .card img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+
+            form {
+                table-layout: fixed;
+                font-size: 14px;
+            }
+            .KYC_form {
+                max-width: 100%;
+                padding: 15px;
+                font-size: 14px;
+              }
+            
+              .KYC_form input,
+              .KYC_form select {
+                font-size: 14px;
+              }
+
+              .checkbox-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+              }
+              
+              #grant-permission {
+                margin-right: 10px;
+              }
+              
+              #checkbox-label {
+                font-weight: bold;
+                font-size: 14px;
+                margin-top: 5px;
+              }
+              
+
+            
+            
+        
+        
+}
+

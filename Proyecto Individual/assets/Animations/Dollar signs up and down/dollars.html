@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>25x25 Grid of Dollar Signs</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Add 25 x 25 = 625 dollar div elements dynamically using JavaScript -->
+    </div>
+    <img src="./asset/img/bank.webp" alt="bankImage">
+    <script>
+      const container = document.querySelector('.container');
+      const numDollars = 625; // number of dollar div elements to generate
+  
+      for (let i = 0; i < numDollars; i++) {
+        const dollar = document.createElement('div');
+        dollar.classList.add('dollar');
+        container.appendChild(dollar);
+      }
+    </script>
+</body>
+</html>

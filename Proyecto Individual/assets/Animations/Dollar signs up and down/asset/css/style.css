@@ -1,0 +1,50 @@
+* {
+  overflow: hidden;
+}
+
+body{
+  background-color: black;
+  
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: repeat(25, 1fr);
+  grid-gap: 3;
+  height: 800px;
+  overflow: hidden;
+}
+
+.dollar {
+  background-image: url('../img/dollarsign.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: moveDollars 2s ease-in-out infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes moveDollars {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
+.dollar:nth-child(2n) {
+  animation-direction: reverse;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+  
