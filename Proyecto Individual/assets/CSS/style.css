@@ -160,6 +160,7 @@ form input[type="password"] {
     color: #73F23F;
     font-family: 'PixeloidMono', sans-serif;
     font-size: 30px;
+    text-align: left;
 }
 
  
@@ -722,6 +723,12 @@ footer{
         color: black;
         justify-content: auto;
         text-align: justify;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed
     }
 }
 
